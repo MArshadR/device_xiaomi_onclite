@@ -7,6 +7,7 @@ ro.af.client_heap_size_kbyte=7168
 
 # Bluetooth
 vendor.bluetooth.soc=pronto
+persist.vendor.btstack.enable.splita2dp=true
 
 # Camera
 persist.vendor.camera.expose.aux=1
