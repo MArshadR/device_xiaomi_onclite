@@ -15,6 +15,9 @@ $(call inherit-product, device/xiaomi/onclite/device.mk)
 # Inherit some common AOSiP Derpfest stuff.
 $(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := derp_onclite
 PRODUCT_DEVICE := onclite
