@@ -18,6 +18,9 @@ $(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 # Gapps
 TARGET_GAPPS_ARCH := arm64
 
+#Official
+DERP_BUILDTYPE := Official
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := derp_onclite
 PRODUCT_DEVICE := onclite
