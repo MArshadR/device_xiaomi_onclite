@@ -15,6 +15,9 @@ $(call inherit-product, device/xiaomi/onclite/device.mk)
 # Inherit some common AOSiP Derpfest stuff.
 $(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 720
+
 # Gapps
 TARGET_GAPPS_ARCH := arm64
 
