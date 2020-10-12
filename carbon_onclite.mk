@@ -19,9 +19,6 @@ $(call inherit-product, vendor/carbon/config/gsm.mk)
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 720
 
-# Gapps
-TARGET_GAPPS_ARCH := arm64
-
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := carbon_onclite
 PRODUCT_DEVICE := onclite
