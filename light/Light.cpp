@@ -27,7 +27,7 @@
 #define LCD_LED         LEDS "lcd-backlight/"
 #define WHITE_LED       LEDS "red/"
 
-#define BLINK           "blink"
+#define BREATH           "breath"
 #define BRIGHTNESS      "brightness"
 #define MAX_BRIGHTNESS  "max_brightness"
 #define DUTY_PCTS       "duty_pcts"
@@ -141,8 +141,8 @@ static std::string getScaledRamp(uint32_t brightness) {
 static void handleNotification(const LightState& state) {
     uint32_t whiteBrightness = getScaledBrightness(state, getMaxBrightness(WHITE_LED MAX_BRIGHTNESS));
 
-    /* Disable blinking */
-    set(WHITE_LED BLINK, 0);
+    /* Disable breathing */
+    set(WHITE_LED BREATH, 0);
 
     if (state.flashMode == Flash::TIMED) {
         /*
@@ -166,8 +166,8 @@ static void handleNotification(const LightState& state) {
         set(WHITE_LED PAUSE_HI, pauseHi);
         set(WHITE_LED RAMP_STEP_MS, stepDuration);
 
-        /* Enable blinking */
-        set(WHITE_LED BLINK, 1);
+        /* Enable breathing */
+        set(WHITE_LED BREATH, 1);
     } else {
         set(WHITE_LED BRIGHTNESS, whiteBrightness);
     }
